@@ -136,6 +136,13 @@ textarea {
   margin: 50px 0;
 }
 
+img {
+  width:100%;
+}
+
+figure {
+  margin:0;
+}
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 header,
@@ -148,6 +155,7 @@ footer {
 
 header {
   padding: 15px 0;
+ 
 }
 
 header .content-wrapper{
@@ -229,6 +237,10 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow:row wrap;
+    background-image:url('../img/unplugged-retreat.jpg');
+    background-size:cover;
+    background-position: center;
+    min-height:500px;
 }
 
 .hero-area h1 {
@@ -236,7 +248,17 @@ footer .copyright {
   font-family:'Poppins', Helvetica, Arial, sans-serif;
   font-weight:500;
   line-height:1.2;
+  margin: 10px;
 }
+
+header figure {
+  width:60%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
 /* Aside */
 
 aside {
@@ -278,6 +300,9 @@ input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow:row wrap;
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size:cover;
+    background-position: center;
 }
 
 .features h2 {
@@ -495,8 +520,20 @@ input[type=button] {
         display: none;
       }
 
-      /* Hero Area */
+      header figure {
+        width:30%;
+      }
 
+      /* Hero Area */
+      .hero-area {
+        min-height: 600px;
+      }
+
+      .hero-area h1 {
+        font-size:3em;
+        line-height:1;
+        margin:0;
+      }
       /* Aside */
       aside .content-wrapper {
         margin:50px 0;
@@ -512,6 +549,10 @@ input[type=button] {
       }
 
       /* Features */
+
+      .features h2 {
+        margin-bottom:20px;
+      }
 
       .features article {
         display:flex;
@@ -581,6 +622,10 @@ input[type=button] {
         align-items:flex-start;
       }
 
+      .contact-content h4 {
+        font-size:1.5em;
+      }
+
       /* ==========================================================================
         FAQ Page
        ========================================================================== */
@@ -596,17 +641,41 @@ input[type=button] {
        .faq h2 {
          width:100%;
        }
+
+       .faq h4 .faq p {
+         font-size:.875em;
+         line-height:1.125;
+       }
     }
     
   @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+
+    header {
+      padding:15px 0;
+    }
+
     .content-wrapper{
       max-width:960px;
+    }
+
+    h2 {
+      font-size:2.25em;
+    }
+
+    h3, h4 {
+      font-size:1.875em;
+    }
+
+    p{
+      font-size:1.125em;
+      line-height:1.333;
     }
 
     /* Hero */
       .hero-area h1 {
         width:60%;
+        font-size:3.75em;
       }
 
     /*Aside */
@@ -617,6 +686,10 @@ input[type=button] {
       aside .content-wrapper .form-description, 
       aside .content-wrapper .form {
         width:30%;
+      }
+
+      .form-description p {
+        font-size:1.125em;
       }
 
       /* Features */
@@ -634,6 +707,14 @@ input[type=button] {
       .reviews article div {
         width:42%;
       }
+    
+      .review h2 {
+        padding-bottom:50px;
+      }
+
+      footer h4 {
+        font-size:1.875em;
+      }
 
     /* ==========================================================================
    About Page
@@ -641,6 +722,11 @@ input[type=button] {
 
    .mission h2, .contact-section .content-wrapper h2 {
     width:95%;
+    font-size:3em;
+   }
+
+   .contact-content h4 {
+     font-size:1.875em;
    }
 
    /* ==========================================================================
@@ -649,6 +735,12 @@ input[type=button] {
 
    .faq h2 {
      width:100%;
+     font-size:3em;
+   }
+
+   .faq h4 .faq p {
+     font-size:1.125em;
+     line-height:1;
    }
 
     }
