@@ -326,6 +326,11 @@ input[type=button] {
   text-align:center;
 }
 
+.features i{
+  font-size:3.75em;
+  margin-bottom:40px;
+}
+
 /* Reviews */
 
 .reviews {
@@ -512,6 +517,16 @@ input[type=button] {
         margin:100px 0;
       }
 
+      h2 {
+        font-size: 2.25em;
+        line-height: 1.333;
+      }
+    
+      h3 {
+          font-size: 1.5em;
+          line-height: 1.25;
+      }
+
       /* Header */
 
       header {
@@ -579,7 +594,7 @@ input[type=button] {
       }
 
       .features .features-item-description {
-        width:50%;
+        width:62%;
       }
 
       /* Reviews */
@@ -589,8 +604,18 @@ input[type=button] {
         justify-content:space-between;
       }
 
-      .reviews article div {
+      .reviews article div
+      .reviews article figure {
         width: 49%;
+      }
+
+      .reviews h2 {
+        width:85%;
+      }
+
+      .reviews h3 {
+        width:75%;
+        margin:0;
       }
 
       /* Footer */
@@ -599,7 +624,7 @@ input[type=button] {
         margin: 100px 0;
       }
 
-      .footer-content {
+      footer .footer-content {
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -612,6 +637,16 @@ input[type=button] {
       footer .copyright {
         width: 100%;
       }
+
+      footer h4 {
+        font-size:1.5em;
+        margin-bottom:40px;
+      }
+
+      footer p {
+        line-height:1.285;
+      }
+
 
       /* ==========================================================================
         About Page
