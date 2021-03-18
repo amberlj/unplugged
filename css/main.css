@@ -102,6 +102,8 @@ textarea {
 
   ul,ol {
     list-style-type:none;
+    margin:0;
+    padding:0;
   }
 
   a {
@@ -113,6 +115,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size:1.875em;
     font-weight:500;
+    margin:0;
   }
 
   h3, h4 {
@@ -147,6 +150,7 @@ figure {
 /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
+    background-color:#202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,6 +170,15 @@ header .content-wrapper{
   margin:0;
 }
 
+
+header figure {
+  width:60%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+}
+
 .header-divider {
   width:100%;
   background: #3a3a3a;
@@ -175,7 +188,7 @@ header .content-wrapper{
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow:row wrap;
     width:60%;
@@ -219,9 +232,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color:#527158;
+  border-radius:50%;
+  width:40px;
+  height:40px;
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+footer .social-icons i {
+  font-size:1.3125em;
 }
 
 footer .copyright {
@@ -229,8 +250,9 @@ footer .copyright {
 }
 
 
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
 
 .hero-area {
     display: flex;
@@ -248,21 +270,14 @@ footer .copyright {
   font-family:'Poppins', Helvetica, Arial, sans-serif;
   font-weight:500;
   line-height:1.2;
-  margin: 10px;
 }
 
-header figure {
-  width:60%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-flow:row wrap;
-}
 
 /* Aside */
 
 aside {
-    display: flex;
+    background-color:#527158;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-flow:row wrap;
@@ -361,18 +376,6 @@ input[type=button] {
   background-color:#527158;
 }
 
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-flow:row wrap;
-  background-color:#2a423a;
-}
-
-.contact-content p{
-  margin:0;
-}
-
 .map figure {
   width:100%;
   height:0;
@@ -388,6 +391,20 @@ input[type=button] {
   top:0;
   left:0;
 }
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:row wrap;
+  background-color:#2a423a;
+}
+
+.contact-content p{
+  margin:0;
+}
+
+
 
 /* --------------------  FAQ Page -------------------- */
 
@@ -597,6 +614,10 @@ input[type=button] {
         width:62%;
       }
 
+      .features i {
+        margin-bottom: 30px;
+      }
+
       /* Reviews */
 
       .reviews article {
@@ -628,16 +649,13 @@ input[type=button] {
         display:flex;
         justify-content:space-between;
         align-items:center;
+        flex-direction: row;
       }
 
       footer .contact {
         margin-bottom:0;
       }
-
-      footer .copyright {
-        width: 100%;
-      }
-
+      
       footer h4 {
         font-size:1.5em;
         margin-bottom:40px;
@@ -647,6 +665,17 @@ input[type=button] {
         line-height:1.285;
       }
 
+      footer .social-icons {
+        width:12.5em;
+        justify-content:space-between;
+      }
+
+
+      footer .copyright {
+        width: 100%;
+      }
+
+    
 
       /* ==========================================================================
         About Page
@@ -729,7 +758,7 @@ input[type=button] {
 
     /* Hero */
       .hero-area h1 {
-        width:60%;
+        width:80%;
         font-size:3.75em;
       }
 
