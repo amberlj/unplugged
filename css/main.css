@@ -410,6 +410,13 @@ input[type=button] {
   margin:0;
 }
 
+address {
+  margin:10px 10px 10px 10px;
+}
+
+.contact-wrapper h2 {
+  margin:20px 20px 10px 10px;
+}
 
 
 /* --------------------  FAQ Page -------------------- */
@@ -537,7 +544,7 @@ input[type=button] {
 
       .content-wrapper {
         max-width:640px;
-        margin:100px 0;
+        margin:110px 0;
       }
 
       h2 {
@@ -599,7 +606,7 @@ input[type=button] {
       aside .content-wrapper .form-description, 
       aside .content-wrapper .form{
         width: 40%;
-        margin: 0;
+        margin: 10px;
       }
 
       /* Features */
@@ -645,10 +652,14 @@ input[type=button] {
         margin:0;
       }
 
+      figure .reviews {
+        margin:5px 10px 10px 10px;
+      }
+
       /* Footer */
       footer .content-wrapper {
         width: 65%;
-        margin: 100px 0;
+        margin: 50px 0;
       }
 
       footer .footer-content {
@@ -698,14 +709,19 @@ input[type=button] {
         width:45%;
       }
 
-      .contact-sectionn .content-wrapper h2 {
+      .contact-section .content-wrapper h2 {
         width:80%;
       }
+
+      .contact-wrapper h2 {
+        margin: 40px 30px 10px 35px;
+    }
     
       .contact-content {
         display:flex;
         justify-content:space-between;
         align-items:flex-start;
+        margin: 10px 40px 40px 40px;
       }
 
       .contact-content h4 {
@@ -716,12 +732,15 @@ input[type=button] {
         padding-bottom:45.5%;
       }
 
+    
+
       /* ==========================================================================
         FAQ Page
        ========================================================================== */
 
        .faq .content-wrapper {
          justify-content:space-between;
+         margin:125px 0 0 0;
        }
 
        .faq-content {
@@ -823,7 +842,13 @@ input[type=button] {
     padding-bottom:37.5%;
   }
   
-  
+   .contact-wrapper h2 {
+     margin:50px 30px 30px 30px;
+   }
+   
+   .contact-content {
+     margin:10px 30px 70px 30px;
+   }
 
    /* ==========================================================================
    FAQ Page
