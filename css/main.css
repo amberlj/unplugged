@@ -628,12 +628,13 @@ address {
         margin-bottom:20px;
       }
 
-      .features-items article {
+      .features-items  {
         display:flex;
         justify-content:center;
         align-items:center;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         flex-basis: 50%;
+
       }
 
       .features .features-item-description {
@@ -642,6 +643,10 @@ address {
 
       .features i {
         margin-bottom: 30px;
+      }
+
+      .features article {
+        margin:20px 20px 20px 20px;
       }
 
       /* Reviews */
