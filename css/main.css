@@ -819,7 +819,8 @@ address {
 
       aside .content-wrapper .form-description, 
       aside .content-wrapper .form {
-        width:30%;
+        width:100%;
+        margin:20px 70px 50px 70px;
       }
 
       .form-description p {
@@ -839,7 +840,8 @@ address {
       /* Reviews */
 
       .reviews article div {
-        width:42%;
+        width:100%;
+        margin:0px 20px 10px 30px;
       }
     
       .review h2 {
