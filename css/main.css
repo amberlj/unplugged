@@ -625,14 +625,14 @@ address {
       /* Features */
 
       .features h2 {
-        margin-bottom:20px;
+        margin:50px 70px 30px 70px;
       }
 
       .features-items  {
         display:flex;
         justify-content:center;
         align-items:center;
-        flex-flow: column;
+        flex-flow: row wrap; 
       }
 
       .features .features-item-description {
@@ -649,7 +649,8 @@ address {
         align-items:center;
         flex-flow: column;
         width:50%;
-        margin:20px 20px 20px 20px;
+        margin:30px 20px 30px 20px;
+        flex-basis:33%;
       }
 
       /* Reviews */
@@ -831,11 +832,27 @@ address {
 
       .features h2 {
         width:90%;
+        margin:50px 100px 50px 100px;
+      }
+
+
+      .features-items  {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-flow: row wrap; 
       }
 
       .features article {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-flow: column;
+        width:50%;
+        margin:50px 0px 50px 0px;
         flex-basis:33%;
       }
+
 
       /* Reviews */
 
